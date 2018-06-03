@@ -37,7 +37,7 @@
 
 /client/verb/github()
 	set name = "discord"
-	set desc = "Join to discord"
+	set desc = "Join the discord"
 	set hidden = 1
 	if(config.discord)
 		if(alert("This will open discord invite in your browser. Are you sure?",,"Yes","No")=="No")

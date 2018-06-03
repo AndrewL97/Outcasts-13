@@ -12,7 +12,7 @@
 	chamber_sound = 'sound/effects/wep_magazines/smg_chamber.ogg'
 
 /obj/item/weapon/gun/ballistic/automatic/proto
-	name = "\improper NanoTrasen Saber SMG"
+	name = "\improper Saber SMG"
 	desc = "A prototype three-round burst 9mm submachine gun, designated 'SABR'. Has a threaded barrel for suppressors."
 	icon_state = "saber"
 	mag_type = /obj/item/ammo_box/magazine/smgm9mm
@@ -114,7 +114,7 @@
 	icon_state = "c20r[magazine ? "-[Ceiling(get_ammo(0)/4)*4]" : ""][chambered ? "" : "-e"][suppressed ? "-suppressed" : ""]"
 
 /obj/item/weapon/gun/ballistic/automatic/wt550
-	name = "security auto rifle"
+	name = "wt-550 auto rifle"
 	desc = "An outdated personal defence weapon. Uses 4.6x30mm rounds and is designated the WT-550 Automatic Rifle."
 	icon_state = "wt550"
 	item_state = "arg"
@@ -212,7 +212,7 @@
 
 /obj/item/weapon/gun/ballistic/automatic/tommygun
 	name = "Thompson submachine gun"
-	desc = "A reproduction of the classic M1928A1 A1 Thompson submachine gun, this firearm takes a drum magazine capable of holding fifty rounds of .45 ACP ammunition."
+	desc = "A reproduction of the classic M1928A1 Thompson submachine gun, this firearm takes a drum magazine capable of holding fifty rounds of .45 ACP ammunition."
 	icon_state = "tommygun"
 	item_state = "tommygun"
 	wielded_icon = "tommygun-wielded"
@@ -226,8 +226,8 @@
 	fire_delay = 1
 
 /obj/item/weapon/gun/ballistic/automatic/ar
-	name = "\improper NT-ARG 'Boarder'"
-	desc = "A robust assault rile used by Nanotrasen fighting forces."
+	name = "\improper ARG 'Boarder'"
+	desc = "A robust assault rile used by combat fighting forces."
 	icon_state = "arg"
 	item_state = "arg"
 	slot_flags = 0
@@ -244,7 +244,7 @@
 
 /obj/item/weapon/gun/ballistic/automatic/shotgun/bulldog
 	name = "\improper 'Bulldog' Shotgun"
-	desc = "A semi-auto, mag-fed shotgun for combat in narrow corridors, nicknamed 'Bulldog' by boarding parties. Compatible only with specialized 8-round drum magazines."
+	desc = "A semi-auto, mag-fed shotgun for combat in narrow corridors, nicknamed 'Bulldog' ompatible only with specialized 8-round drum magazines."
 	icon_state = "bulldog"
 	item_state = "bulldog"
 	w_class = WEIGHT_CLASS_NORMAL
@@ -286,8 +286,8 @@
 // L6 SAW //
 
 /obj/item/weapon/gun/ballistic/automatic/l6_saw
-	name = "\improper L6 SAW"
-	desc = "A heavily modified 5.56x45mm light machine gun, designated 'L6 SAW'. Has 'Aussec Armoury - 2531' engraved on the receiver below the designation."
+	name = "MK48 MOD 0"
+	desc = "A heavily modified 5.56x45mm light machine gun, designated 'MK48 MOD 0'. Has 'Aussec Armoury - 2531' engraved on the receiver below the designation."
 	icon_state = "l6closed100"
 	item_state = "l6closedmag"
 	w_class = WEIGHT_CLASS_HUGE
@@ -355,8 +355,8 @@
 // SNIPER //
 
 /obj/item/weapon/gun/ballistic/automatic/sniper_rifle
-	name = "sniper rifle"
-	desc = "A long ranged weapon that does significant damage. No, you can't quickscope."
+	name = "Barrett M107
+	desc = "A semi automatic anti material rifle chambered in 50. BMG. Don't point at the sun.
 	icon_state = "sniper"
 	item_state = "sniper"
 	recoil = 2
@@ -382,10 +382,12 @@
 
 
 /obj/item/weapon/gun/ballistic/automatic/sniper_rifle/syndicate
-	name = "syndicate sniper rifle"
-	desc = "An illegally modified .50 cal sniper rifle with supression compatibility. Quickscoping still doesn't work."
+	name = "Barrett M82
+	desc = "A semi automatic anti-material rifle chambered in 50. BMG. This one has flutes on the barrel to lower muzzle velocity to allow for the attachment of a surpressor.
 	pin = /obj/item/device/firing_pin/implant/pindicate
 	origin_tech = "combat=7;syndicate=6"
+	can_unsuppress = 1
+	can_suppress = 1
 
 /obj/item/weapon/gun/ballistic/automatic/punisher
 	name = "Punisher"
@@ -414,7 +416,7 @@
 
 /obj/item/weapon/gun/ballistic/automatic/laser
 	name = "laser rifle"
-	desc = "Though sometimes mocked for the relatively weak firepower of their energy weapons, the logistic miracle of rechargable ammunition has given Nanotrasen a decisive edge over many a foe."
+	desc = "Though sometimes mocked for the relatively weak firepower of their energy weapons, the logistic miracle of rechargable ammunition has given West Tek a decisive edge over many a foe."
 	icon_state = "oldrifle"
 	item_state = "arg"
 	mag_type = /obj/item/ammo_box/magazine/recharge
