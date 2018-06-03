@@ -355,8 +355,8 @@
 // SNIPER //
 
 /obj/item/weapon/gun/ballistic/automatic/sniper_rifle
-	name = "Barrett M107
-	desc = "A semi automatic anti material rifle chambered in 50. BMG. Don't point at the sun.
+	name = "Barrett M107"
+	desc = "A semi automatic anti material rifle chambered in 50. BMG. Don't point at the sun."
 	icon_state = "sniper"
 	item_state = "sniper"
 	recoil = 2
@@ -382,8 +382,8 @@
 
 
 /obj/item/weapon/gun/ballistic/automatic/sniper_rifle/syndicate
-	name = "Barrett M82
-	desc = "A semi automatic anti-material rifle chambered in 50. BMG. This one has flutes on the barrel to lower muzzle velocity to allow for the attachment of a surpressor.
+	name = "Barrett M82"
+	desc = "A semi automatic anti-material rifle chambered in 50. BMG. This one has flutes on the barrel to lower muzzle velocity to allow for the attachment of a surpressor."
 	pin = /obj/item/device/firing_pin/implant/pindicate
 	origin_tech = "combat=7;syndicate=6"
 	can_unsuppress = 1
