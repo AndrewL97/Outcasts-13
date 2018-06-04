@@ -41,5 +41,5 @@ before_script:
 script:
   - bash tools/travis/check_filedirs.sh tgstation.dme
   - bash tools/travis/build_tools.sh
-  - bashtools/travis/build_byond.sh
+  - bash tools/travis/build_byond.sh
 
