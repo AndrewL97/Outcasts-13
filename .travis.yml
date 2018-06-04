@@ -28,6 +28,7 @@ addons:
       - python-pip
 
 install:
+  - npm install
   - sh tools/travis/install_build_tools.sh
 
 before_script:
