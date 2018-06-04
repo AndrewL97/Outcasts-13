@@ -27,10 +27,6 @@ addons:
       - python
       - python-pip
 
-
-before_install:
-  - chmod +x tools/travis/install_build_tools.sh
-
 install:
   - bash tools/travis/install_build_tools.sh
 
@@ -39,7 +35,7 @@ before_script:
   - bash tools/travis/before_build_byond.sh
 
 script:
-  - bash tools/travis/check_filedirs.sh tgstation.dme
+  - bash tools/travis/check_filedirs.sh fallout13.dme
   - bash tools/travis/build_tools.sh
   - bash tools/travis/build_byond.sh
 
