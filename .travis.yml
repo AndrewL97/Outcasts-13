@@ -1,5 +1,5 @@
 language: generic
-sudo: true
+sudo: false
 
 env:
     global:
@@ -35,11 +35,11 @@ install:
   - bash tools/travis/install_build_tools.sh
 
 before_script:
-  - tools/travis/before_build_tools.sh
-  - tools/travis/before_build_byond.sh
+  - bash tools/travis/before_build_tools.sh
+  - bash tools/travis/before_build_byond.sh
 
 script:
-  - tools/travis/check_filedirs.sh tgstation.dme
-  - tools/travis/build_tools.sh
-  - tools/travis/build_byond.sh
+  - bash tools/travis/check_filedirs.sh tgstation.dme
+  - bash tools/travis/build_tools.sh
+  - bashtools/travis/build_byond.sh
 
